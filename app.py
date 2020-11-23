@@ -130,7 +130,7 @@ fig6 = fig6.for_each_annotation(lambda a: a.update(text=a.text.replace("job_pres
 #fig6.show()
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 app.layout = html.Div(
     [
         html.H1("Exploring Gender Inequality Measured By The 2019 General Social Survey"),
