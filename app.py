@@ -117,7 +117,6 @@ fig4 = px.scatter(gss_scatter, x='job_prestige', y='income',
                         'income':'Income'},
                  color_discrete_map = {'male':'blue', 'female':'red'},
                  hover_data=['education', 'socioeconomic_index'])
-fig4 = fig4.update_layout(title='Income Vs. Job Prestige by Sex')
 #
 fig5_1 = px.box(gss_clean, x='sex', y = 'income', color = 'sex',
                    labels={'income':'Income', 'sex':''})
